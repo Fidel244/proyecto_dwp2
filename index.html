@@ -21,7 +21,24 @@
         <img class="hamb-btn"src="./imagenes/menu-btn.png" alt="">
     </header>
     <section class="slider-section">
-
+        <div  class="mislider fade">
+            <img src="./imagenes/img1.jpg" alt="">
+        </div>
+        <div class="mislider fade">
+            <img src="./imagenes/img2.jpg" alt="">
+        </div>
+        <div class="mislider fade">
+            <img src="./imagenes/img3.jpg" alt="">
+        </div>
+        <div class="direcciones">
+            <a href="#" class="atras" onclick="anvanzaSlider(-1)">&#10094</a>
+            <a href="#" class="adelante" onclick="anvanzaSlider(1)">&#10095</a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+        </div>
     </section>
     <section class="menu-iconos">
 
@@ -42,7 +59,7 @@
         </div>
     </footer>
 
-
+    <script src="slider.js"></script>
     <script>
         const menuBtn = document.querySelector('.hamb-btn')
         const navlinks = document.querySelector('.menu')
