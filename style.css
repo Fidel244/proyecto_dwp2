@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap'); /*Fuente de títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    --color-principal:#DDD7C6;
+    --color-secundario:#BE247D;
+    --color-enfasis:black;
+    --tamaño-titulo:55px;
+
+    /*tarjetas*/
+    --color_fondo:#ddd7c6c9;
+    
+
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +23,10 @@ html,body{
 
     overflow-x: hidden;
     scroll-behavior: smooth;
+    font-family:'Open Sans', sans-serif ;
 }
+
+/*Menú de navegación*/
 
 header{
     height: 8vh;
@@ -149,28 +167,230 @@ header{
     animation-duration: 1.5s;
 }
 
+/*Productos*/
+.titulo{
+    font-family: 'Mr Dafoe', cursive;
+    color: var(--color-secundario);
+    font-size: var(--tamaño-titulo);
+    text-align: center;
+    padding: 2% 0;
+}
+
 .menu-iconos{
-    background-color: rgb(255, 123, 0);
-    height: 35vh;
+    background-color: var(--color-principal);
 }
 
-.seccion-imagenes{
-    background-color: rgb(98, 0, 255);
-    height: 65vh;
+.productos{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4%;
+    gap: 20px;
 }
 
-.servicios{
-    background-color: red;
-    height: 65vh;
-}
-
-.franja{
-
-    background-color: rgb(7, 116, 22);
-    height: 35vh;
-
+.producto {
+    width: 130px;
+    height: 130px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    
+    
+   
     
 }
+
+.producto .img{
+    width: 90%;
+    height: 90%;
+    border: 5px solid var(--color-secundario);
+    border-radius: 50%;
+    background-color: white;
+}
+
+.producto:hover .img{
+    transform: scale(1.1);
+}
+
+.producto img{
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    padding: 10px;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+
+}
+.producto h5{
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+
+/*****************************************************/
+/*Seccion de imagenes*/
+.seccion-imagenes{
+    background-color: var(--color-enfasis);
+    background-image: linear-gradient(180deg, #be247d , #000000 100%);
+    
+}
+
+.seccion-imagenes p{
+    color: white;
+    padding: 3% 2% 1% 2%;
+      
+    text-align: center;
+   
+    
+}
+
+.seccion-imagenes h5{
+    text-align: right;
+    padding-right: 6%;
+    font-size: 35px;
+    padding-top: 0;
+   
+    
+}
+
+
+
+/******************************************************/
+
+/****servicios***/
+.servicios{
+    width: 100%;
+    padding-bottom: 2% ;
+}
+
+
+.cards_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card_container{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid var(--color-secundario);
+}
+
+
+
+.card_img{
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: ease-in-out 1s;
+    
+
+}
+
+.card2:nth-child(1){
+    background-image: url("imagenes/servicio1.jpg");
+   
+    
+}
+
+.card2:nth-child(2){
+    background-image: url("imagenes/servicio2.jpg");
+   
+    
+}
+.card2:nth-child(3){
+    background-image: url("imagenes/servicio3.jpg");
+   
+    
+}
+
+.card2 .card2_contenido{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color_fondo);
+    transform: translateY(-100%);
+    transition: ease-in-out 1s;
+}
+
+.card2:hover .card2_contenido{
+    transform: translateY(0%);
+}
+
+.card2_texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+
+
+.card2_contenido h3{
+    font-size: 35px;
+    margin-top: 20px;
+    
+    
+}
+
+.card2_contenido span{
+    width: 80%;
+    height: 5px;
+    background-color: var(--color-secundario);
+    margin: 25px 10px;
+    
+}
+
+.card2_contenido p{
+    padding: 6%;
+    
+}
+
+.card2_contenido  .boton{
+   padding: 5%;
+   color: var(--color-secundario);
+   border: 3px solid var(--color-secundario);
+   border-radius: 30px;
+}
+
+/******************************************************/
+.franja{
+
+    background-color: var(--color-principal);
+    font-size: 20px;
+    text-align: center;
+    padding: 1% 0;
+   
+}
+
+.datos{
+    width: 30%;
+    min-width: 300px;
+}
+
+.datos i{
+    font-size: 40px;
+    margin-right: 7px;
+    color: var(--color-secundario);
+}
+
+/********************************************************/
 
 
 .contacto{
