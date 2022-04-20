@@ -129,7 +129,7 @@ header{
 .direcciones a{
     color: aliceblue;
     display: inline-block;
-    padding: 20PX;
+    padding: 20px;
     text-decoration: none;
 }
 
@@ -205,6 +205,24 @@ header{
    
     
 }
+
+/*whatsap*/
+
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+}
+.
 
 .producto .img{
     width: 90%;
@@ -307,18 +325,21 @@ header{
 
 .card2:nth-child(1){
     background-image: url("imagenes/servicio1.jpg");
-   
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
 
 .card2:nth-child(2){
     background-image: url("imagenes/servicio2.jpg");
-   
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
 .card2:nth-child(3){
     background-image: url("imagenes/servicio3.jpg");
-   
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
 
@@ -559,11 +580,15 @@ header{
     }
 
     .footer{
-        margin: 0;
-        padding: 10px;
-        height: 10vh;
+        padding: 20px;
+        height: 15vh;
     }
     
+    .contacto{
+        height: 65vh;
+        margin-bottom: 0;
+    }
+
     .form textarea{
         width: 80%;
         font-size: 20px;
